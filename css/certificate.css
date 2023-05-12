@@ -1,0 +1,706 @@
+            /* @import './_responsive.css'; */
+            
+            * {
+                box-sizing: border-box;
+                border-width: 0;
+                border-style: solid;
+                margin: 0;
+                padding: 0;
+                -webkit-print-color-adjust: exact !important;  
+                /* color-adjust: exact !important;                 Firefox 48 – 96 */
+                print-color-adjust: exact !important;           /* Firefox 97+, Safari 15.4+ */
+            }
+            
+            html {
+                scroll-behavior: smooth;
+                font-family: Inter;
+                font-size: 16px;
+            }
+            
+            body {
+                font-weight: 400;
+                font-style: normal;
+                text-decoration: none;
+                text-transform: none;
+                letter-spacing: normal;
+                line-height: 1.15;
+                color: var(--dl-color-gray-black);
+                background-color: var(--dl-color-gray-white);
+            }
+            #button{
+                width: 10vw;
+            }
+            #bulk-holder {
+                display: flex;
+                justify-content: center;
+                width: 90%;
+                margin-bottom: 100px;
+                flex-direction: column;
+                /* border: 3px solid red; */
+            }
+            
+            .certificate-container {
+                width: 65%;
+                height: 990px;
+                display: flex;
+                position: relative;
+                /* justify-self: center; */
+                /* flex-shrink: 0; */
+                border: 2px solid transparent;
+                box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+                justify-content: center;
+                align-self: center;
+                margin: 70px;
+                padding: 10px;
+               
+            }
+            
+            .auto-certificate-container-child {
+                border: 7px solid #99cc99;
+                height: 97%;
+                width: 97%;
+                border-radius: 83px;
+                margin-top: 7px;
+                margin-bottom: 7px;
+                margin-right: 10px;
+                margin-left: 10px;
+                display: flex;
+                flex-direction: column;
+                box-sizing: content-box;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 21px;
+                /* margin: 5px, 10px; */
+            }
+            
+            .top-section {
+                flex: 0.8;
+                display: flex;
+                gap: 7px;
+                margin: 10px;
+                /* margin-bottom: 10px; */
+                /* border: 1px solid blue; */
+                height: 16%;
+                box-sizing: content-box;
+                padding: 20px;
+                position: relative;
+            }
+            #print-btn{
+                height: 5vh;
+                border: 1.5px solid skyblue;
+                width: 15%;
+                font: 2em;
+                font-weight: bold;
+                border-radius: 10px;
+                transition: .4s;
+               
+            }
+            #print-btn:hover{
+                border: 1.5px solid silver;
+                background: skyblue;
+                color: white;
+                transform: scale(1.2);
+            }
+
+            
+            .tc {
+                /* border: 2px solid blue; */
+                position: relative;
+                width: 50%;
+                height: auto;
+            }
+            
+            .coht {
+                /* border: 1px solid green; */
+                position: relative;
+                width: 55%;
+            }
+            
+            .mid-section {
+                display: flex;
+                flex-direction: column;
+                flex: 2;
+                height: 60%;
+                /* margin: 15px; */
+                justify-content: center;
+                border: 1px solid black;
+            }
+            
+            .mid_and_bottom {
+                flex: 2;
+                display: flex;
+                flex-direction: column;
+                background-repeat: no-repeat;
+                /* background-size: auto; */
+                margin: 10px;
+                /* border: 2px solid blue; */
+                background: url(../public/playground_assets/tcbackground.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                align-items: center;
+                background-position: center;
+                box-sizing: content-box;
+                padding: 5px;
+            }
+            
+            .mb-top {
+                /* border: 1px solid red; */
+                flex: 2;
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 5px;
+                height: 50%;
+                padding: 5px;
+            }
+            
+            .head {
+                /* border: 1px solid blue; */
+                flex: 1.4;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                box-sizing: content-box;
+            }
+            
+            .head-text {
+                font-size: 19px;
+                font-weight: 500;
+                width: 70%;
+                color: rgba(0, 0, 0, 1);
+                height: 40%;
+                margin: 5px;
+                font-size: 26px;
+                /* align-self: center; */
+                font-style: Regular;
+                text-align: center;
+                font-family: ABeeZee;
+                font-weight: 500;
+                line-height: normal;
+                font-stretch: normal;
+                text-decoration: none;
+                /* border: 1px solid red; */
+            }
+            
+            .training {
+                width: 61%;
+                /* border: 1px solid red; */
+                text-align: center;
+                font-family: ABeeZee;
+                font-weight: 500;
+                line-height: normal;
+                font-size: 20px;
+            }
+            
+            .centre {
+                width: 90%;
+                font-size: 30px;
+                align-self: auto;
+                font-style: Regular;
+                text-align: center;
+                font-family: ABeeZee;
+                font-weight: bold;
+                line-height: normal;
+                font-stretch: semi-expanded;
+                text-decoration: none;
+                /* border: 1px solid red; */
+                margin: 2px;
+            }
+            
+            .cert-info,
+            .date,
+            .head {
+                width: 90%;
+                padding: 5px;
+                margin: 5px;
+            }
+            
+            .cert-info {
+                /* border: 1px solid darkblue; */
+                flex: 1.6;
+                box-sizing: content-box;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                justify-content: space-between;
+            }
+            
+            .award-text,
+            .attend,
+            .date-text,
+            .training-text,
+            .date {
+                /* border: 1px solid red; */
+                margin: 3px;
+                font-family: ABeeZee;
+                font-weight: 400;
+                line-height: normal;
+                font-stretch: normal;
+                text-decoration: none;
+                box-sizing: content-box;
+            }
+            
+            .name {
+                margin: 3px;
+                font-style: Regular;
+                text-align: center;
+                font-family: Artifika;
+                /* font-weight: 400; */
+                line-height: 2;
+                font-stretch: normal;
+                text-decoration: none;
+                font-weight: bolder;
+                letter-spacing: 3px;
+                box-sizing: content-box;
+            }
+            
+            .training-text {
+                font-weight: 650;
+                letter-spacing: 2px;
+            }
+            
+            .date {
+                /* border: 1px solid crimson; */
+                flex: 0.3;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                font-weight: bold;
+                font-size: 22px;
+                letter-spacing: 2px;
+            }
+            /* .bottom-section {
+    flex: 1;
+    height: 20%;
+    margin: 15px;
+} */
+            
+            .mb-bottom {
+                flex: 1;
+                /* border: 1px solid green; */
+                width: 95%;
+                height: 50%;
+                margin: 7px;
+                padding: 5px;
+                box-sizing: content-box;
+            }
+            
+            .trainer-info-and-logo {
+                /* border: 1px solid red; */
+                flex: 2.5;
+                display: flex;
+                height: 65%;
+                margin: 5px;
+                box-sizing: content-box;
+                padding: 4px;
+                gap: 5px;
+            }
+            
+            .end-text {
+                /* border: 1px solid green; */
+                height: 25%;
+                margin: 5px;
+                padding: 7px;
+                flex: 0.5;
+                font-size: 12px;
+                font-family: ABeeZee;
+                display: flex;
+                flex-direction: column;
+                gap: 7px;
+                position: relative;
+            }
+            
+            .issue {
+                font-style: italic;
+                text-align: center;
+            }
+            
+            .trainer-info-and-cert {
+                flex: 2;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                /* border: 1px solid black; */
+                padding: 3px;
+                width: 50%;
+                margin: 3.5px;
+            }
+            
+            .logo {
+                /* border: 1px solid darkblue; */
+                flex: 1;
+                width: 25%;
+                height: 100%;
+                padding: 1.5px;
+            }
+            
+            .trainer {
+                display: flex;
+                flex-direction: column;
+                /* border: 1px solid red; */
+                padding: 5px;
+                justify-content: start;
+                align-items: start;
+                justify-content: space-between;
+                height: 70%
+            }
+            
+            .rt {
+                font-style: Regular;
+                text-align: center;
+                font-family: ABeeZee;
+                font-weight: 400;
+                line-height: normal;
+                font-stretch: normal;
+                text-decoration: none;
+                /* border: 1px solid red; */
+                width: 50%;
+                margin-bottom: 3px;
+            }
+            
+            .rtn {
+                margin: 3px;
+                font-family: Artifika;
+                font-weight: 700;
+                line-height: normal;
+                font-stretch: normal;
+                text-decoration: none;
+                width: 70%;
+                text-align: start;
+                letter-spacing: 2px;
+                /* border: 1px solid red; */
+                /* padding: 5px; */
+            }
+            
+            .rts {
+                font-style: italic;
+                text-align: center;
+                font-family: ABeeZee;
+                font-weight: 400;
+                line-height: normal;
+                font-stretch: normal;
+                text-decoration: none;
+                /* border: 1px solid red; */
+                width: 50%;
+                margin-bottom: 3px;
+            }
+            
+            .cert-details {
+                display: flex;
+                /* border: 1px solid red; */
+            }
+            
+            .cn,
+            .cert-num {
+                margin: 5px;
+                font-family: ABeeZee;
+                font-style: Regular;
+            }
+            
+            .cn {
+                font-weight: 500;
+            }
+            
+            .cert-num {
+                font-weight: bolder;
+            }
+
+
+            .loading{
+                position: fixed;
+                z-index: 999;
+                height: 2em;
+                width: 2em;
+                overflow: show;
+                margin: auto;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                visibility: hidden;
+            }
+            
+            
+            /* Transparent Overlay */
+            
+            .loading:before {
+                content: '';
+                display: block;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.3);
+            }
+            
+            /* :not(:required) hides these rules from IE9 and below */
+            
+            .loading:not(:required) {
+                /* hide "loading..." text */
+                font: 0/0 a;
+                color: transparent;
+                text-shadow: none;
+                background-color: transparent;
+                border: 0;
+            }
+            
+            .loading:not(:required):after {
+                content: '';
+                display: block;
+                font-size: 10px;
+                width: 1em;
+                height: 1em;
+                margin-top: -0.5em;
+                -webkit-animation: spinner 1500ms infinite linear;
+                -moz-animation: spinner 1500ms infinite linear;
+                -ms-animation: spinner 1500ms infinite linear;
+                -o-animation: spinner 1500ms infinite linear;
+                animation: spinner 1500ms infinite linear;
+                border-radius: 0.5em;
+                -webkit-box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.5) -1.5em 0 0 0, rgba(0, 0, 0, 0.5) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+                box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) -1.5em 0 0 0, rgba(0, 0, 0, 0.75) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+            }
+            
+            
+            /* Animation */
+            
+            @-webkit-keyframes spinner {
+                0% {
+                    -webkit-transform: rotate(0deg);
+                    -moz-transform: rotate(0deg);
+                    -ms-transform: rotate(0deg);
+                    -o-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                }
+                100% {
+                    -webkit-transform: rotate(360deg);
+                    -moz-transform: rotate(360deg);
+                    -ms-transform: rotate(360deg);
+                    -o-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+            }
+            
+            @-moz-keyframes spinner {
+                0% {
+                    -webkit-transform: rotate(0deg);
+                    -moz-transform: rotate(0deg);
+                    -ms-transform: rotate(0deg);
+                    -o-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                }
+                100% {
+                    -webkit-transform: rotate(360deg);
+                    -moz-transform: rotate(360deg);
+                    -ms-transform: rotate(360deg);
+                    -o-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+            }
+            
+            @-o-keyframes spinner {
+                0% {
+                    -webkit-transform: rotate(0deg);
+                    -moz-transform: rotate(0deg);
+                    -ms-transform: rotate(0deg);
+                    -o-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                }
+                100% {
+                    -webkit-transform: rotate(360deg);
+                    -moz-transform: rotate(360deg);
+                    -ms-transform: rotate(360deg);
+                    -o-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+            }
+            
+            @keyframes spinner {
+                0% {
+                    -webkit-transform: rotate(0deg);
+                    -moz-transform: rotate(0deg);
+                    -ms-transform: rotate(0deg);
+                    -o-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                }
+                100% {
+                    -webkit-transform: rotate(360deg);
+                    -moz-transform: rotate(360deg);
+                    -ms-transform: rotate(360deg);
+                    -o-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+            }
+          
+            @media print {
+                #print-btn{
+                    visibility: hidden;
+                    display: none;
+                }
+               /* .certificate-container{
+                 margin-bottom: 200px;
+               } */
+
+            }
+            
+            @media (max-width: 575.98px) {
+                /* styles for XS screens */
+               #bulk-holder {
+                    display: flex;
+                    justify-content: center;
+                    width: 90%;
+                    height: 50%;
+                    justify-content: space-around;
+                    /* border: 3px solid yellow; */
+                    padding: 0;
+                    box-sizing: content-box;
+                }
+                .certificate-container {
+                    border: 1.5px solid silver;
+                    height: 50%;
+                    width: 97%;
+                    margin: 20px;
+                    padding: 10px;
+                    margin-bottom: 300px;
+                }
+                html {
+                    font-size: 12px;
+                }
+                .date {
+                    font-size: 17px;
+                }
+                .mid_and_bottom {
+                    background-repeat: no-repeat;
+                    align-items: center;
+                    background-position: center;
+                    background-size: contain;
+                }
+                .head-text {
+                    font-size: 17px;
+                    font-weight: 500;
+                }
+                .centre {
+                    font-size: 20px;
+                    font-weight: bolder;
+                    width: 100%;
+                }
+                .training {
+                    font-size: 20px;
+                    font-weight: 500;
+                    width: 80%;
+                }
+            }
+            
+            @media (min-width: 576px) and (max-width: 767.98px) {
+                /* styles for SM screens */
+                
+                #bulk-holder {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    height: 50%;
+                    /* border: 3px solid rebeccapurple; */
+                    padding: 0;
+                    box-sizing: content-box;
+                }
+                .certificate-container {
+                    /* border: 2px solid black; */
+                    height: 40%;
+                    width: 100%;
+                    margin: 20px;
+                    padding: 10px;
+                    margin-bottom: 120px;
+                }
+                html {
+                    font-size: 13.5px;
+                }
+                .mid_and_bottom {
+                    background-repeat: no-repeat;
+                    align-items: center;
+                    background-position: center;
+                    background-size: contain;
+                }
+                .head-text {
+                    font-size: 19px;
+                    font-weight: 500;
+                }
+                .centre {
+                    font-size: 22px;
+                    font-weight: bolder;
+                    width: 100%;
+                }
+                .training {
+                    font-size: 20px;
+                    font-weight: 500;
+                    width: 80%;
+                }
+                .name {
+                    font-size: 14px;
+                }
+                .date {
+                    font-size: 19px;
+                }
+            }
+            
+            @media (min-width: 768px) and (max-width: 991.98px) {
+                /* styles for MD screens */
+                #bulk-holder {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    /* height: 60%; */
+                    /* border: 3px solid red; */
+                    padding: 0;
+                    box-sizing: content-box;
+                }
+                .certificate-container {
+                    /* border: 2px solid black; */
+                    height: 40%;
+                    width: 85%;
+                    margin: 20px;
+                    padding: 10px;
+                }
+                html {
+                    font-size: 14.5px;
+                }
+                .mid_and_bottom {
+                    background-repeat: no-repeat;
+                    align-items: center;
+                    background-position: center;
+                    background-size: contain;
+                }
+                .head-text {
+                    font-size: 19px;
+                    font-weight: 500;
+                }
+                .centre {
+                    font-size: 22px;
+                    font-weight: bolder;
+                    width: 100%;
+                }
+                .training {
+                    font-size: 20px;
+                    font-weight: 500;
+                    width: 80%;
+                }
+                .name {
+                    font-size: 15.9px;
+                }
+                .date {
+                    font-size: 21px;
+                }
+            }
+            /* @media print and (orientation: portrait) {
+                .mid-section {}
+                @page {
+                    size: portrait;
+                }
+            }
+            
+            @media print and (orientation: portrait) {} */
