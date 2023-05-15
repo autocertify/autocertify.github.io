@@ -248,7 +248,10 @@ function MakeBulk(participants){
             if(checkbox.checked){
                 if(e.target.id !== null && e.target.id !== undefined)
                 {
-                    checkedboxes.push(e.target.id);
+                    if(!checkedboxes.includes(e.target.id)){
+                          checkedboxes.push(e.target.id);
+                      }
+                 
                     if(checkedboxes.length >= 2)
                     {
                        bulk.style.display ="initial";
