@@ -52,6 +52,7 @@ $(document).ready(function () {
                         {
                             data: 'training.dateOfCertificateIssuance',
                             render: function (data, type, row) {
+                                console.log(row.dateOfCertificateIssuance);
                                 return dateformatter(row.dateOfCertificateIssuance);
                             },
                             title: 'Date For Certification'
