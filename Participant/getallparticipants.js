@@ -66,6 +66,7 @@ $(document).ready(function () {
                         {
                             data: 'training.dateOfCertificateIssuance',
                             render: function (data, type, row) {
+                                console.log(row.training.dateOfCertificateIssuance);
                                 return dateformatter(row.training.dateOfCertificateIssuance);
                             },
                             title: 'Date Certified'
