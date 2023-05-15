@@ -242,16 +242,19 @@ function MakeBulk(participants){
     var elements = document.getElementsByClassName("checkbox");
     var participantsCertificate = [];
     Array.from(elements).forEach(checkbox => {
-        checkbox.addEventListener("click", (e) =>{
+        checkbox.addEventListener("change", (e) =>{
+            
             console.log(e.target.id);
-            if(e.target.id !== null && e.target.id !== undefined)
-            {
-                checkedboxes.push(e.target.id);
-                if(checkedboxes.length >= 2)
+            if(checkbox.checked){
+                if(e.target.id !== null && e.target.id !== undefined)
                 {
-                   bulk.style.display ="initial";
-                   participantsCertificate = participants.filter(participant => checkedboxes.includes(participant.fullName));
-                   console.log(participantsCertificate);
+                    checkedboxes.push(e.target.id);
+                    if(checkedboxes.length >= 2)
+                    {
+                       bulk.style.display ="initial";
+                       participantsCertificate = participants.filter(participant => checkedboxes.includes(participant.fullName));
+                       console.log(participantsCertificate);
+                    }
                 }
             }
         })
